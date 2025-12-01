@@ -4,7 +4,8 @@ import Order from '../app/models/Order.js';
 import OrderItem from '../app/models/OrderItem.js';
 import Payment from '../app/models/Payment.js';
 import Users from '../app/models/Users.js';
-import configDataBase from '../config/database'
+import configDataBase from '../config/database.js'
+
 
 const models = [BlingToken, Order, OrderItem, Payment, Users];
 
