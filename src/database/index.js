@@ -4,13 +4,13 @@ import Order from '../app/models/Order.js';
 import OrderItem from '../app/models/OrderItem.js';
 import Payment from '../app/models/Payment.js';
 import Users from '../app/models/Users.js';
-import ConfigDatabase from '../config/database'
+import configDataBase from '../config/database'
 
 const models = [BlingToken, Order, OrderItem, Payment, Users];
 
 class Database {
   constructor() {
-    this.connection = new Sequelize(ConfigDatabase);
+    this.connection = new Sequelize(configDatabase);
     this.init();
   }
 
