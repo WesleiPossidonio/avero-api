@@ -10,7 +10,7 @@ const models = [BlingToken, Order, OrderItem, Payment, Users];
 
 class Database {
   constructor() {
-    this.connection = new Sequelize(configDatabase);
+    this.connection = new Sequelize(configDataBase);
     this.init();
   }
 
