@@ -1,11 +1,12 @@
-const dotenv = require('dotenv')
-const pg = require('pg')
+import pg from 'pg'
+import dotenv from 'dotenv'
 dotenv.config()
 
-module.exports = {
+export default {
   dialect: 'postgres',
   dialectModule: pg,
-  host: process.env.DB_HOSTNAME,
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT || 5432,
   username: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
@@ -14,4 +15,5 @@ module.exports = {
     underscored: true,
     underscoredAll: true,
   },
+  logging: false,
 }
