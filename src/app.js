@@ -33,6 +33,8 @@ class App {
       'http://localhost:5174',
       'http://localhost:5173',
       'http://localhost:3001',
+      'https://avero-macae.vercel.app',
+      'https://avero-api.vercel.app'
     ]
 
     if (!origin || allowedOrigins.includes(origin)) {

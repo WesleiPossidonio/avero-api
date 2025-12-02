@@ -29,7 +29,7 @@ router.get("/auth/google/callback",
       { expiresIn: "7d" }
     );
 
-    return res.redirect(`http://localhost:5173/auth/success?token=${token}`);
+    return res.redirect(`https://avero-api.vercel.app/auth/success?token=${token}`);
   }
 );
 
